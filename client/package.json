@@ -1,0 +1,66 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3587",
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.1",
+    "babel-core": "^6.0.20",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "chart.js": "^3.9.1",
+    "chartjs-adapter-moment": "^1.0.0",
+    "chartjs-plugin-annotation": "^2.1.0",
+    "chartjs-plugin-datalabels": "^2.1.0",
+    "chartjs-plugin-zoom": "^1.2.1",
+    "chartjs-to-image": "^1.1.0",
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "node-pre-gyp": "^0.17.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.4.1",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "^5.0.1",
+    "sqlite3": "^5.1.4",
+    "styled-components": "^5.3.6",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "DANGEROUSLY_DISABLE_HOST_CHECK=true PORT=3588 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@expo/webpack-config": "^0.16.19"
+  }
+}
