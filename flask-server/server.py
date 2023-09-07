@@ -11,9 +11,13 @@ import re
 import sqlite3
 import os
 
-DB_path = '../Patients.db'
+abs_path = ''
 
-#/home/kasm-user/cathydb.sh
+DB_path = '../Patients.db'
+host_name = abs_path+''
+main_db_name = ''
+password_file_path = abs_path+''
+
 connection = sqlite3.connect(DB_path, check_same_thread=False)
 
 cursor = connection.cursor()
@@ -121,7 +125,7 @@ class PatientEncoder(JSONEncoder):
             return o.__dict__
 
 app = Flask(__name__)
-file = open("/home/kasm-user/Desktop/Downloads/mot_de_passe", "r")
+file = open(password_file_path, "r")
 data = file.read() 
 ids = data.split(";")
 conn = None
@@ -133,8 +137,8 @@ sixMonths = relativedelta(months=6)
 thirtySeconds = timedelta(seconds=30)
 try:
     conn = psycopg2.connect(
-        host = 'localhost',
-        dbname = 'cathydb',
+        host = host_name,
+        dbname = main_db_name,
         user = ids[0],
         password = ids[1].translate({ord(c): None for c in string.whitespace}),
         port = 5432
