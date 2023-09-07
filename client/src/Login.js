@@ -11,7 +11,7 @@ import { useContext } from 'react';
 import { DARK_THEME, LIGHT_THEME } from "./Theme";
 
 
-const admin = {title:'Dr', name: 'DOE', email:'john.doe.med@ssss.gouv.qc.ca', password:'admin'}
+const admin = {title:'Dr', name: 'Greg House', email:'test', password:'test'}
 
 
 export default ({ setToken, lg
