@@ -11,8 +11,10 @@ import re
 import sqlite3
 import os
 
+DB_path = '../Patients.db'
+
 #/home/kasm-user/cathydb.sh
-connection = sqlite3.connect('/home/kasm-user/Desktop/Downloads/Patients.db', check_same_thread=False)
+connection = sqlite3.connect(DB_path, check_same_thread=False)
 
 cursor = connection.cursor()
 
@@ -172,7 +174,7 @@ try:
     
     @app.route("/DBsize")
     def searchSize():  
-        file_name = "/home/kasm-user/Desktop/Downloads/Patients.db"
+        file_name = DB_path
         file_stats = os.stat(file_name)
         size = file_stats.st_size / (1024 * 1024)
         PatientEncoder().encode(size)
