@@ -1,3 +1,8 @@
+# Moved to another repo
+# No update on this page
+
+-----
+
 # Axolotl : Interface for the evaluation of hypoxemia in PICUs
 This project was conceived by the CHU Sainte-Justine research center to help intensive care physicians make major decisions about the future treatment of a patient.
 
